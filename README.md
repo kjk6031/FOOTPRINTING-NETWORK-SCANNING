@@ -24,3 +24,6 @@ I recorded every output carefully, because the information I collected here form
 
 
 ## whois
+whois reveals the registrar, registration and expiry dates, and name servers. Here the name
+servers point to HostGator, so an attacker instantly learns the hosting provider. Registration dates
+and abuse contacts help with social engineering and planning.
