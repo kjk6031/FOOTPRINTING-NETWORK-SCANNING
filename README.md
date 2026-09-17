@@ -1,11 +1,11 @@
 # FOOTPRINTING & RECONNAISSANCE ATTACKS
 
-##INTRODUCTION
+## INTRODUCTION
 Reconnaissance (also called as footprinting) is the first step in any real attack or security test. Before touching a target, an attacker quietly collects as much public information about it as possible. This includes who owns the domain, its real IP address, the hosting provider, the web technologies it runs, its DNS and mail records, and whether a firewall is protecting it.
 All of this comes from information the target has already made public, so the target never even knows it is being studied.
 This is why recon is powerful and very hard to detect.
 
-##What I did
+## What I did
 In this lab, I footprinted the live website networkwalks.com using six built‑in Kali Linux tools. Each tool revealed a different piece of information about the target, and together they helped me build a full profile of it.
 <ul>
 <li>Whois:</li> I ran a whois lookup and I gathered the domain registration details, including registrar information and contact data.
