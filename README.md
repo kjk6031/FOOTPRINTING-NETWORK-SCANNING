@@ -60,3 +60,4 @@ dnsrecon maps the target's entire DNS footprint: mail servers, DNS software vers
 
 
 # Conlusion
+Through this project I have used in-built kali tools for information gathering.
