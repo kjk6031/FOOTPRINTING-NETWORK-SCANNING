@@ -58,6 +58,28 @@ dnsrecon maps the target's entire DNS footprint: mail servers, DNS software vers
 
 <img width="1126" height="421" alt="image" src="https://github.com/user-attachments/assets/35c4f366-c496-434d-9477-261d4e716f0a" />
 
-
+## Tools ^Resources
+------------
+|Kali      |
+|whois     |
+|whatweb   |
+|nslookup  |
+|curl -I   |
+|wafw00f   |
+|dnsrecon  |
+------------
 # Conlusion
-Through this project I have used in-built kali tools for information gathering.
+Through this project I have used in-built kali tools for information gathering. Reconnaissance is the first stage of every real attack. Before touching a target, an attacker quietly builds a complete profile of it using only public information, exactly the tools in this task. whois and DNS tools (nslookup, dnsrecon) reveal who owns the domain, its real IP address, its hosting provider and its mail servers. whatweb and curl fingerprint the exact software and versions running, which an attacker matches against known vulnerabilities. wafw00f warns them whether a firewall is watching, so they know how careful to be.
+None of these tools attack the target. They only read what is already public, which is exactly why footprinting is so powerful and so hard to detect. The more an organization leaks, the easier every later stage of the attack becomes. This is also why defenders run the same tools on themselves: to see what an attacker would see, and to reduce it.
+
+
+
+# Author
+Kwabeng Jeffrey Kingsley
+Cybersecurity Student B083
+
+LinkedIn: www.linkedin.com/in/jeffery-kwabeng-aa53a82b5
+
+## Project Information
+Program Name: FOOTPRINTING-RECONNAISSANCE-ATTACKS | Week: 02 | Project: FOOTPRINTING & RECONNAISSANCE
+ATTACKS WITH MULTIPLE KALI TOOLS | Repository: GitHub
