@@ -6,7 +6,7 @@ All of this comes from information the target has already made public, so the ta
 This is why recon is powerful and very hard to detect.
 
 ## What I did
-In this lab, I footprinted the live website networkwalks.com using six built‑in Kali Linux tools. Each tool revealed a different piece of information about the target, and together they helped me build a full profile of it.
+In this lab, I footprinted the live website <b>networkwalks.com</b> using six built‑in Kali Linux tools. Each tool revealed a different piece of information about the target, and together they helped me build a full profile of it.
 <ul>
 <li>Whois:</li> I ran a whois lookup and I gathered the domain registration details, including registrar information and contact data.
 
@@ -21,3 +21,6 @@ In this lab, I footprinted the live website networkwalks.com using six built‑i
 <li>Dnsrecon:</li> I executed dnsrecon to enumerate DNS records and gather deeper insights into the domain’s infrastructure.
 </ul>
 I recorded every output carefully, because the information I collected here forms the foundation for planning my scanning and attacks. I know that I cannot attack what I have not first understood, so this footprinting stage was critical to my reconnaissance process.
+
+
+## whois
