@@ -58,7 +58,7 @@ dnsrecon maps the target's entire DNS footprint: mail servers, DNS software vers
 
 <img width="1126" height="421" alt="image" src="https://github.com/user-attachments/assets/35c4f366-c496-434d-9477-261d4e716f0a" />
 
-## Tools ^Resources
+## Tools & Resources
 ------------
 |Kali      |
 |whois     |
