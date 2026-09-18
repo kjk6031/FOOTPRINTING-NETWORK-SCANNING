@@ -8,6 +8,8 @@ After information gathering, attackers typically move to the scanning phase, whe
 This report demonstrates both phases of the security assessment process. The footprinting component focuses on gathering intelligence about the networkwalks.com domain using various Kali Linux reconnaissance tools, while the scanning component examines a local network using Zenmap. Together, these activities illustrate how a potential attacker progresses from collecting publicly available information about a target to identifying and mapping live systems within a network environment. For each task, the report includes the commands executed, the observed results, supporting screenshots, and a brief explanation of the significance of each finding from an attacker's perspective.
 
 ## What I did
+
+<h4>Footprinting</h4>
 <p>
 In this lab, I footprinted the live website <b>networkwalks.com</b> using six built‑in Kali Linux tools. Each tool revealed a different piece of information about the target, and together they helped me build a full profile of it.
 
@@ -48,23 +50,67 @@ I recorded every output carefully, because the information I collected here form
 <img width="1126" height="421" alt="image" src="https://github.com/user-attachments/assets/35c4f366-c496-434d-9477-261d4e716f0a"/>
 </p>
 
-<p>I also</p>
+<h4>ZENMAP</h4>
+<p>I also scanned my local network </p>
 
 
 ## Tools & Resources
-------------
-|Kali      |
-|whois     |
-|whatweb   |
-|nslookup  |
-|curl -I   |
-|wafw00f   |
-|dnsrecon  |
-------------
-# Conlusion
-Through this project I have used in-built kali tools for information gathering. Reconnaissance is the first stage of every real attack. Before touching a target, an attacker quietly builds a complete profile of it using only public information, exactly the tools in this task. whois and DNS tools (nslookup, dnsrecon) reveal who owns the domain, its real IP address, its hosting provider and its mail servers. whatweb and curl fingerprint the exact software and versions running, which an attacker matches against known vulnerabilities. wafw00f warns them whether a firewall is watching, so they know how careful to be.
-None of these tools attack the target. They only read what is already public, which is exactly why footprinting is so powerful and so hard to detect. The more an organization leaks, the easier every later stage of the attack becomes. This is also why defenders run the same tools on themselves: to see what an attacker would see, and to reduce it.
+| Tools, Devices and Commands   | Purpose                                                           |
+|-------------------------------|-------------------------------------------------------------------|
+| Kali Linux & Windows          | Operating systems used for reconnaissance activities              |
+| WHOIS                         | Find domain registration details (owner, dates, name servers).    |
+| whatweb                       | Fingerprint web technologies (server, CMS, plugins, IP).          |
+| nslookup                      | Resolve the domain name to its IP address using DNS.              |
+| curl -I                       | Read the HTTP response headers of the website.                    |
+| wafw00f                       | Detect whether a Web Application Firewall protects the site.      |
+| dnsrecon                      | Enumerate all DNS records (NS, MX, SPF, TXT, SRV).                |
+| Zenmap (Nmap GUI)             | Scan the local subnet to find live hosts, IPs and MAC addresses.  |
+| Windows CMD                   | Checking local IP and MAC address identification                  |
 
+
+<ol>
+  <p><li>Download & install Zenmap from official website on your Windows PC: </li>I downloaded zenmap from https://nmap.org/download.html and installed it.</p>
+  <p></p><li>Find your local IP address & your LAN subnet: </li>I opened CMD & run ipconfig command to find my PC’s local IP address &
+and local LAN subnet
+<img width="850" height="550" alt="image" src="https://github.com/user-attachments/assets/66e3e3f6-99ed-4e40-99bf-8d02aec78b46" />
+</p>
+  <p><li>Find the list of live hosts/PC’s in your IP subnet: </li>I lunched Zenmap, input the local LAN subnet & select Ping Scan to find the list of
+live hosts in your subnet
+    <img width="850" height="550" alt="image" src="https://github.com/user-attachments/assets/0e10ff49-401a-4787-84b3-3550fa69d14c" />
+  </p>
+  <p><li>How many hosts are live in your subnet?</li>There were 2 live host which my PC was part.</p>
+  <p><li>What are the IP addresses of the live hosts?</li>
+    <ul>
+      <li>10.101.231.189</li>
+      <li>10.101.231.98</li>
+    </ul>
+</p>
+  <p><li>What are the MAC addresses of the live hosts?</li>
+    <ul>
+      <li>BA:47:81:8A:1D:A0</li>
+      <li>44-EF-BF-16-63-F7</li>
+    </ul>
+</p>
+  <p><li>Display & save the output topology in PDF Format on your desktop: </li>
+  <img width="1200" height="750" alt="image" src="https://github.com/user-attachments/assets/4cb194a8-6331-49c8-add7-43bbd8622b5e" />
+  </p>
+</ol>
+
+
+
+
+
+
+
+
+# Conlusion
+This project provided practical experience in both footprinting and network scanning using built-in Kali Linux tools and Zenmap. Reconnaissance and network discovery are critical phases in cybersecurity because they help security professionals understand a target environment before conducting further assessment activities.
+
+During the footprinting phase, tools such as WHOIS, NSLookup, DNSRecon, WhatWeb, cURL, and WAFW00F were used to gather publicly available information about the target. These tools helped identify domain ownership details, IP addresses, DNS records, hosting providers, mail servers, web technologies, and security mechanisms such as web application firewalls. Although no direct interaction or attack was performed against the target systems, the information collected demonstrated how much valuable intelligence can be obtained from publicly accessible sources.
+
+The Zenmap phase complemented this process by enabling the discovery of live hosts, open ports, running services, and network configurations. Through graphical Nmap scan profiles, it was possible to visualize network assets and identify potential entry points that could be exploited if left unsecured. The results emphasized the importance of regular network monitoring and vulnerability assessment in maintaining a strong security posture.
+
+Overall, this exercise demonstrated that information gathering and network scanning are essential components of cybersecurity assessments. The insights obtained from both footprinting and Zenmap scans highlight how attackers and defenders rely on the same techniques to understand a target environment. For organizations, regularly performing these activities helps identify exposed information, reduce unnecessary visibility, strengthen defenses, and mitigate potential security risks before they can be exploited.
 
 
 # Author
@@ -74,7 +120,6 @@ Cybersecurity Student B083
 LinkedIn: www.linkedin.com/in/jeffery-kwabeng-aa53a82b5
 
 ## Project Information
-Program Name: FOOTPRINTING-RECONNAISSANCE-ATTACKS | Week: 02 | Project: FOOTPRINTING & RECONNAISSANCE
-ATTACKS WITH MULTIPLE KALI TOOLS | Repository: GitHub
+Program Name: FOOTPRINTING-RECONNAISSANCE-ATTACKS | Week: 02 | Project: W2 FOOTPRINTING AND ZENMAPBASED SCANNING | Repository:
 
 
