@@ -1,9 +1,13 @@
 # FOOTPRINTING & NETWORK SCANNING
 
 ## INTRODUCTION
-Reconnaissance (also called as footprinting) is the first step in any real attack or security test. Before touching a target, an attacker quietly collects as much public information about it as possible. This includes who owns the domain, its real IP address, the hosting provider, the web technologies it runs, its DNS and mail records, and whether a firewall is protecting it.
-All of this comes from information the target has already made public, so the target never even knows it is being studied.
-This is why recon is powerful and very hard to detect.
+Introduction
+
+Reconnaissance, also known as footprinting, is the first stage of any cybersecurity assessment or real-world attack. During this phase, an attacker gathers as much publicly available information as possible about a target before attempting any direct interaction. This information may include domain ownership details, IP addresses, hosting providers, DNS records, email servers, web technologies, and security mechanisms such as firewalls. Since these details are collected from publicly accessible sources, the target organization is often unaware that it is being investigated, making reconnaissance one of the most effective and difficult-to-detect phases of an attack.
+
+After information gathering, attackers typically move to the scanning phase, where they identify active hosts, open ports, services, and potential network entry points. One of the most widely used tools for this purpose is Nmap (Network Mapper). On Windows systems, Nmap is commonly accessed through Zenmap, its official graphical user interface (GUI). Zenmap is a free, open-source, and cross-platform security scanning tool that simplifies network discovery for beginners while providing advanced functionality for experienced cybersecurity professionals and penetration testers. It allows users to perform various network scans, save frequently used scan profiles, and visualize network information effectively.
+
+This report demonstrates both phases of the security assessment process. The footprinting component focuses on gathering intelligence about the networkwalks.com domain using various Kali Linux reconnaissance tools, while the scanning component examines a local network using Zenmap. Together, these activities illustrate how a potential attacker progresses from collecting publicly available information about a target to identifying and mapping live systems within a network environment. For each task, the report includes the commands executed, the observed results, supporting screenshots, and a brief explanation of the significance of each finding from an attacker's perspective.
 
 ## What I did
 <p>
