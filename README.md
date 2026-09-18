@@ -1,8 +1,6 @@
 # FOOTPRINTING & NETWORK SCANNING
 
 ## INTRODUCTION
-Introduction
-
 Reconnaissance, also known as footprinting, is the first stage of any cybersecurity assessment or real-world attack. During this phase, an attacker gathers as much publicly available information as possible about a target before attempting any direct interaction. This information may include domain ownership details, IP addresses, hosting providers, DNS records, email servers, web technologies, and security mechanisms such as firewalls. Since these details are collected from publicly accessible sources, the target organization is often unaware that it is being investigated, making reconnaissance one of the most effective and difficult-to-detect phases of an attack.
 
 After information gathering, attackers typically move to the scanning phase, where they identify active hosts, open ports, services, and potential network entry points. One of the most widely used tools for this purpose is Nmap (Network Mapper). On Windows systems, Nmap is commonly accessed through Zenmap, its official graphical user interface (GUI). Zenmap is a free, open-source, and cross-platform security scanning tool that simplifies network discovery for beginners while providing advanced functionality for experienced cybersecurity professionals and penetration testers. It allows users to perform various network scans, save frequently used scan profiles, and visualize network information effectively.
