@@ -1,4 +1,4 @@
-# FOOTPRINTING & RECONNAISSANCE ATTACKS
+# FOOTPRINTING & NETWORK SCANNING
 
 ## INTRODUCTION
 Reconnaissance (also called as footprinting) is the first step in any real attack or security test. Before touching a target, an attacker quietly collects as much public information about it as possible. This includes who owns the domain, its real IP address, the hosting provider, the web technologies it runs, its DNS and mail records, and whether a firewall is protecting it.
