@@ -7,6 +7,21 @@ After information gathering, attackers typically move to the scanning phase, whe
 
 This report demonstrates both phases of the security assessment process. The footprinting component focuses on gathering intelligence about the networkwalks.com domain using various Kali Linux reconnaissance tools, while the scanning component examines a local network using Zenmap. Together, these activities illustrate how a potential attacker progresses from collecting publicly available information about a target to identifying and mapping live systems within a network environment. For each task, the report includes the commands executed, the observed results, supporting screenshots, and a brief explanation of the significance of each finding from an attacker's perspective.
 
+## Tools & Resources
+
+| Tools, Devices and Commands   | Purpose                                                           |
+|-------------------------------|-------------------------------------------------------------------|
+| Kali Linux & Windows          | Operating systems used for reconnaissance activities              |
+| WHOIS                         | Find domain registration details (owner, dates, name servers).    |
+| whatweb                       | Fingerprint web technologies (server, CMS, plugins, IP).          |
+| nslookup                      | Resolve the domain name to its IP address using DNS.              |
+| curl -I                       | Read the HTTP response headers of the website.                    |
+| wafw00f                       | Detect whether a Web Application Firewall protects the site.      |
+| dnsrecon                      | Enumerate all DNS records (NS, MX, SPF, TXT, SRV).                |
+| Zenmap (Nmap GUI)             | Scan the local subnet to find live hosts, IPs and MAC addresses.  |
+| Windows CMD                   | Checking local IP and MAC address identification                  |
+
+
 ## What I did
 
 <h4>Footprinting</h4>
@@ -51,21 +66,9 @@ I recorded every output carefully, because the information I collected here form
 </p>
 
 <h4>ZENMAP</h4>
-<p>I also scanned my local network </p>
+<p>I also scanned my local network using the GUI version of NMAP.</p>
 
 
-## Tools & Resources
-| Tools, Devices and Commands   | Purpose                                                           |
-|-------------------------------|-------------------------------------------------------------------|
-| Kali Linux & Windows          | Operating systems used for reconnaissance activities              |
-| WHOIS                         | Find domain registration details (owner, dates, name servers).    |
-| whatweb                       | Fingerprint web technologies (server, CMS, plugins, IP).          |
-| nslookup                      | Resolve the domain name to its IP address using DNS.              |
-| curl -I                       | Read the HTTP response headers of the website.                    |
-| wafw00f                       | Detect whether a Web Application Firewall protects the site.      |
-| dnsrecon                      | Enumerate all DNS records (NS, MX, SPF, TXT, SRV).                |
-| Zenmap (Nmap GUI)             | Scan the local subnet to find live hosts, IPs and MAC addresses.  |
-| Windows CMD                   | Checking local IP and MAC address identification                  |
 
 
 <ol>
