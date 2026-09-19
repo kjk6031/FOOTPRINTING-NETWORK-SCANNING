@@ -120,6 +120,6 @@ Cybersecurity Student B083
 LinkedIn: www.linkedin.com/in/jeffery-kwabeng-aa53a82b5
 
 ## Project Information
-Program Name: FOOTPRINTING-RECONNAISSANCE-ATTACKS | Week: 02 | Project: W2 FOOTPRINTING AND ZENMAPBASED SCANNING | Repository:
+Program Name: FOOTPRINTING AND ZENMAP BASED SCANNING | Week: 02 | Project: W2 FOOTPRINTING AND ZENMAP BASED SCANNING | Repository: https://github.com/kjk6031/FOOTPRINTING-NETWORK-SCANNING/tree/main | Project REPORT: https://docs.google.com/document/d/17Eij8_ZBuftxq4VNg0iz9VPmNPLk6wnHSWZeZcJpNxo/edit?usp=sharing
 
 
